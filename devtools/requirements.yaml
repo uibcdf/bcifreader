@@ -1,8 +1,6 @@
 setup:
   channels: &setup_channels
-    - uibcdf
     - conda-forge
-    - ambermd
     - defaults
   dependencies: &setup_dependencies
     - python
@@ -15,25 +13,10 @@ production:
     - *setup_channels
   dependencies: &production_dependencies
     - *setup_dependencies
-    - h5py
-    - numpy
-    - numba
-    - pyunitwizard
-    - mmtf-python
-    - pandas
-    - jinja2
-    - openmm
-    - pdbfixer
-    - nglview
-    - ambertools
-    - networkx
-    - mdtraj
-    - mdanalysis
-    - biopython
-    - ipywidgets
-    - tqdm
-    - pip:
-      - mmcif
+    - future
+    - six
+    - requests
+    - msgpack-python
 
 test:
   channels: &test_channels
@@ -60,9 +43,7 @@ docs:
     - sphinx-favicon
     - sphinx-tabs
     - myst-nb
-    - seaborn
     - nbsphinx
-    - plotly
 
 development:
   channels:

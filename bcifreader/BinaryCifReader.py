@@ -16,8 +16,8 @@ from contextlib import closing
 
 import msgpack
 import requests
-from mmcif.api.DataCategory import DataCategory
-from mmcif.api.PdbxContainers import DataContainer
+from .DataCategory import DataCategory
+from .PdbxContainers import DataContainer
 
 try:
     from urllib.parse import urlsplit

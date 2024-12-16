@@ -29,7 +29,7 @@ import sys
 from six.moves import range
 from six.moves import zip
 
-from mmcif.api.DataCategoryBase import DataCategoryBase
+from .DataCategoryBase import DataCategoryBase
 
 __docformat__ = "google en"
 __author__ = "John Westbrook"
